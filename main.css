@@ -1,0 +1,96 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%; /* locks html page to 100% of 
+	the person's screen */
+	overflow: none; /* there's nothing that people
+	will need to scroll down the screen for */
+	padding: 0px;
+	margin: 0px;
+	font-family: "Roboto"; /* font family for everthing
+	on this page will be Roboto */
+	background-color: rgb(249, 248, 247); 
+	/* Google color picker */
+}
+
+/*This refers to every div*/
+div {
+	display: inline-block; /* puts divs on the same line.
+	Now the divs will only take up the space they need*/
+	margin-right: -4px; /* always do this when you use
+	display: inline-block to remove spaces */
+	vertical-align: middle; /* aligns the divs in the 
+	middle */
+}
+
+/*Now we style each div separately!*/
+div#top-left { /*never have a space between div and #top-left*/
+	width: 50%; /*this div will take 50% of the screen*/
+	min-height: 60%; /*Makes the top part a bit wider than 
+	the bottom part*/
+	background-image: url('Photo.png');
+	/*Now add a few more things for images!*/
+	background-position: center;
+	background-size: cover; /*makes sure your image covers
+	the background*/
+	background-repeat: no-repeat; /*don't repeat image if your
+	image is too small!*/
+}
+
+div#top-right {
+	width: 50%;
+	min-height: 60%;
+	padding: 5% 8%; /*See notes in Google Doc*/
+	color: rgb(83, 88, 95); /*changes font color*/
+}
+
+div#bottom {
+	width: 100%; /*This div takes up the full width of the bottom*/
+	min-height: 40%; /*We put 60% for the top divs so 
+	this must be 40%!*/
+	padding: 3% 17%;
+	color: rgb(220, 222, 224); /* Changes font color */
+	background-color: rgb(40, 40, 40); /*Changes background color
+	to the black one!*/
+}
+
+div#bottom-left {
+	width: 50%;
+	vertical-align: top;
+}
+div#bottom-right {
+	width: 30%; /*Extra 20% (1 - 50% - 30%) is used for padding!*/
+	margin-left: 20%; /*There will be a margin of 20% between 
+	the bottom 2 divs*/
+	vertical-align: top;
+}
+
+h1 {
+	font-size: 45px; /*this header is the biggest text*/
+	font-weight: bold; /*You could also say "700"*/
+	margin-bottom: 20px; /*Alternatively, you can say 
+	"margin: 0 0 20 0" (T L B R)*/
+}
+
+h2 {
+	font-size: 35px; /*Second biggest header on our page*/
+	margin-bottom: 15px;
+}
+
+p {
+	font-size: 22px;
+	font-weight: lighter; /*You could also say "300"*/
+	line-height: 1.4; /* This is like spacing in word;
+	double space = line-height of 2 */
+	margin: 0; /*Same thing as 0px or 0% */
+}
+
+a {
+	text-decoration: none; /*underlines, strikethroughs, etc.*/
+	font-weight: bold;
+	color: rgb(3, 203, 235); /*light blue color*/
+}
+
+
